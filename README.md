@@ -1,61 +1,60 @@
-# Análise de Dados: O Impacto da Educação, Idade, Gênero e Meditação nos Níveis de Estresse
+# 📊 Análise de Dados sobre Ansiedade e Estresse
 
-## Sobre o Projeto
-Este projeto tem como objetivo analisar fatores que influenciam os níveis de estresse em diferentes perfis de pessoas, utilizando dados estruturados e técnicas de análise exploratória.
+## 📌 Visão Geral
+Este projeto tem como objetivo explorar os fatores que influenciam os níveis de estresse e ansiedade, utilizando um conjunto de dados que inclui informações sobre idade, gênero, qualidade do sono, prática de atividades físicas, nível educacional e hábitos de meditação. Por meio de análises estatísticas, buscamos compreender padrões e possíveis correlações entre esses fatores.
 
-A análise foi realizada utilizando Python e bibliotecas como Pandas e NumPy para processar os dados, gerando insights valiosos sobre como aspectos como educação, idade, gênero e práticas de meditação impactam os níveis de estresse.
+## 📂 Estrutura do Projeto
 
-## Estrutura do Arquivo
-O arquivo `ansiedade.ipynb` contém:
-- **Carga e limpeza de dados**: Importação do dataset, tratamento inicial e limpeza e transformação de colunas nulas.
-- **Análise por nível de educação**: Estudo sobre como diferentes formações acadêmicas influenciam o estresse e o quanto essa influência é significante.
-- **Influência da idade**: Avaliação do impacto da transição para a vida adulta nos níveis de estresse, analise de niveis te estresse por faixa etária.
-- **Estresse por gênero**: Comparativo entre os diferentes gêneros para entender se o sexismo e a homofobia pode influênciar no estresse.
-- **Meditação e estresse**: Investigação sobre se a prática de meditação reduz os níveis de estresse.
+O arquivo principal do projeto é o `ansiedade.ipynb`, que contém todas as análises realizadas.
 
-## Principais Resultados Obtidos
-### 1. **Educação e Estresse**
-- Indivíduos com nível superior apresentam, em média, níveis de estresse mais elevados.
-- A hipótese é que a pressão acadêmica e profissional esteja relacionada a esse aumento.
+- **Idade e Estresse**: Investigamos a relação entre diferentes faixas etárias e os níveis de estresse.
+- **Estresse por Gênero**: Comparção do nível de estresse entre gêneros.
+- **Influência da Meditação**: Avaliação de como a prática da meditação afeta o estresse.
+- **Qualidade do Sono e Estresse**: Verificação da média de horas de sono de pessoas com altos e baixos níveis de estresse.
+- **Atividade Física e Estresse**: Análise do impacto das atividades físicas no estresse em diferentes grupos etários.
 
-### 2. **Idade e Estresse**
-- A faixa etária mais jovem, especialmente aqueles em transição para a vida adulta, apresenta altos níveis de estresse.
-- O acúmulo de responsabilidades e adaptação a uma nova rotina pode estar entre os fatores influentes.
+## 🔍 Principais Descobertas
 
-### 3. **Gênero e Estresse**
-- Diferenças de estresse foram observadas entre gêneros, destacando-se um padrão significativo em alguns grupos.
-- As diferenças podem estar ligadas a fatores culturais, sociais e biológicos.
+1. **Idade e Estresse**
+   - A média de estresse entre pessoas com 30 anos ou menos é de **4.80**.
+   - Para aqueles acima de 30 anos, a média é **5.06**.
+   - Isso sugere que o estresse tende a aumentar com a idade.
+   - para isso, fizemos mais analises para pessoas que tem mais de 30 anos possam contornar o aumento de estresse que consequentemente vem com a idade avançada
 
-### 4. **O Impacto da Meditação**
-- Indivíduos que praticam meditação regularmente tendem a apresentar níveis de estresse menores.
-- Isso sugere um efeito positivo da meditação na regulação emocional e redução do estresse.
+2. **Estresse por Gênero**
+   - Houve diferenças significativas nos níveis de estresse entre gêneros, destacando uma distribuição desigual.
+   - Causas podem estar ligadas a fatores sociais, hormonais e diferenças de padrões de vida
 
-### 5. **Qualidade de vida**
-- Analises indicam que em média, pessoas com alto nível de estresse, tem noites de sono bem abaixo da média imposta pelo site do Gov.com que sugere 8 horas de sono como ideal para uma vida mais saudavel.
-- media de sono em pessoas com alto nível de estresse é de 6 horas e 28 minutos de sono por noite.
+3. **Meditação e Estresse**
+   - Pessoas que praticam meditação regularmente apresentaram níveis médios de estresse **inferiores** aos que não meditam.
+   - Indica que a meditação pode ser uma estratégia eficaz na gestão do estresse.
 
-## Como Executar o Projeto
-1. Clone o repositório:
+4. **Qualidade do Sono e Estresse**
+   - A média de sono entre os participantes foi **6h48min**, abaixo da recomendação **8 horas diárias** impostas pelo site do gov.com.
+   - Um padrão de sono inadequado foi identificado entre aqueles com ansiedade elevada.
+
+5. **Atividade Física e Estresse**
+   - Pessoas que praticam atividade física apresentaram **média de estresse 4.99**, enquanto sedentários tiveram **5.35**.
+   - Jovens (30 anos ou menos) praticam em média **1h58min** de exercícios por dia, enquanto adultos praticam **2h00min**.
+   - Indica que, independentemente da idade, a atividade física pode ser um fator relevante na redução do estresse.
+   - um fator que pode contribuir para a diminuição de niveis de estresse em pessoas de idade mais avançada
+
+## 🚀 Como Utilizar este Projeto
+
+1. Clone este repositório:
    ```bash
-   git clone https://github.com/seuusuario/nome-do-repositorio.git
+   git clone https://github.com/seuusuario/seurepositorio.git
    ```
-2. Instale as dependências:
+2. Instale as dependências necessárias:
    ```bash
-   pip install pandas numpy
+   pip install -r requirements.txt
    ```
-3. Execute o Jupyter Notebook:
-   ```bash
-   jupyter notebook ansiedade.ipynb
-   ```
+3. Execute o notebook `ansiedade.ipynb` em um ambiente compatível (como Jupyter Notebook ou Google Colab).
 
-## Conclusão
-Este estudo mostra como diferentes fatores impactam os níveis de estresse e destaca a importância de abordagens preventivas, como a meditação. Ele também abre espaço para estudos mais aprofundados sobre o tema.
+## 📌 Conclusão
 
-Se você achou interessante, fique à vontade para contribuir ou compartilhar suas opiniões!
+Este estudo demonstrou que fatores como qualidade do sono, prática de atividades físicas e meditação exercem influência significativa sobre os níveis de estresse e ansiedade. As análises apresentadas podem servir como base para aprofundar estudos sobre saúde mental e bem-estar.
 
-
-📌 **Autor:** Victor Amador  
-📧 **Contato:** vitoramadorviegas@gmail.com  
-🔗 **LinkedIn:** [Seu Perfil](https://www.linkedin.com/in/victor--viegas/)  
-
+## 📢 Contato
+Para mais informações, entre em contato pelo [LinkedIn](https://www.linkedin.com/in/victor--viegas/).
 
